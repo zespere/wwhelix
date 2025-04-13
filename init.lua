@@ -15,7 +15,7 @@ local keymap = require "core.keymap"
 local DocView = require "core.docview"
 local StatusView = require "core.statusview"
 
-config.plugins.minimalhelix = {
+config.plugins.wwhelix = {
   enabled = true,
   mode = "normal",
   cursor_colors = {
@@ -35,16 +35,16 @@ local original = {
 }
 
 local function is_enabled()
-  return config.plugins.minimalhelix.enabled
+  return config.plugins.wwhelix.enabled
 end
 
 local function get_mode()
-  return config.plugins.minimalhelix.mode
+  return config.plugins.wwhelix.mode
 end
 
 local function set_mode(mode)
-  config.plugins.minimalhelix.mode = mode
-  style.caret_color = config.plugins.minimalhelix.cursor_colors[mode]
+  config.plugins.wwhelix.mode = mode
+  style.caret_color = config.plugins.wwhelix.cursor_colors[mode]
 end
 
 local function enter_normal_mode()
@@ -138,12 +138,12 @@ end
 
 command.add(nil, {
   ["wwhelix:toggle"] = function()
-    config.plugins.minimalhelix.enabled = not config.plugins.minimalhelix.enabled
-    if config.plugins.minimalhelix.enabled then
-      core.log("MinimalHelix plugin enabled")
+    config.plugins.wwhelix.enabled = not config.plugins.wwhelix.enabled
+    if config.plugins.wwhelix.enabled then
+      core.log("wwhelix plugin enabled")
       enter_normal_mode()
     else
-      core.log("MinimalHelix plugin disabled")
+      core.log("wwhelix plugin disabled")
       style.caret_color = {255, 255, 255}
     end
   end,
