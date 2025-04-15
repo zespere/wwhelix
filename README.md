@@ -1,6 +1,11 @@
 # wwhelix
 Helix inspired plugin for pragtical code editor, written to suit my personal needs.
 
+TODO:
+- Select when navigating with `w` and `b` while in normal
+- Visual mode working with already existing keybinds
+- Add `g+h` and `g+l` for navigating to the left/right side of a line
+
 ## Features
 
 **Normal Mode (Navigation):**
