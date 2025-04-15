@@ -17,3 +17,7 @@ Helix inspired plugin for pragtical code editor, written to suit my personal nee
 
 * `i`: Switch to Insert Mode from Normal Mode.
 * Standard Pragtical editing functionality.
+
+**Visual Mode (Select&Edit):**
+
+* `v`: Switch to Visual Mode from Normal Mode
